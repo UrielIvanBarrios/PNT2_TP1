@@ -20,6 +20,16 @@ console.log("\n");
 productos.forEach((producto) => {
     console.log(`Producto: ${producto.nombre} - Precio: ${producto.precio}`);
 });
-
+console.log("\n");
 //Parte 2
 //Ejercicio 4
+const nombresProductos = productos.map((producto) => producto.nombre);
+console.log(nombresProductos);
+console.log("\n");
+//Ejercicio 5
+const productosTipoRopa = productos.filter((producto) => producto.categoria === "Ropa");
+console.log(productosTipoRopa);
+console.log("\n");
+//Ejercicio 6
+const objetoGorra = productos.find((producto) => producto.nombre === "Gorra");
+console.log(objetoGorra);
